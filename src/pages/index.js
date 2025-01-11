@@ -3,7 +3,7 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div
-      className={`${geistSans.variable} ${geistMono.variable} grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen gap-16`}
+      className={`grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen gap-16`}
     >
       <header className="fixed flex flex-wrap items-center justify-center top-[3vh]">
         <Image
