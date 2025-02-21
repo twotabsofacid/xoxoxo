@@ -23,7 +23,7 @@ export default function Home() {
       <main className="flex flex-col items-center">
         <section className="font-bold text-xl">
           <h1 className="text-4xl mb-4">RSVP</h1>
-          <form name="rsvp-form" method="POST" netflify>
+          <form name="rsvp-form" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="rsvp-form" />
             <div className="mb-4">
               <label>
