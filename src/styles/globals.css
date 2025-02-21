@@ -3,12 +3,41 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8f1dc;
+  --foreground: #710e20;
+  --highlight: #8d4584;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Space Grotesk', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+input,
+select {
+  background-color: transparent;
+  border-bottom: 1px solid var(--highlight);
+  color: var(--highlight);
+}
+select {
+  border: 1px solid var(--highlight);
+  padding: 0.2em 0.5em;
+}
+button {
+  background-color: var(--highlight);
+  color: var(--background);
+  padding: 0.5em 1em;
+  transition: 0.3s ease all;
+}
+button:hover {
+  background-color: var(--foreground);
 }

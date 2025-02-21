@@ -2,10 +2,16 @@ import Image from 'next/image';
 
 export default function Home() {
   return (
-    <div
-      className={`grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen gap-16`}
-    >
-      <header className="fixed flex flex-wrap items-center justify-center top-[3vh]">
+    <div className="flex flex-col items-center justify-center min-h-[100vh]">
+      <Image
+        className="fixed top-[1em] right-[1em]"
+        src="/img/cupid.gif"
+        alt="Cupid"
+        width={190}
+        height={50}
+        priority
+      />
+      <header className="flex flex-wrap items-center justify-center my-[3vh]">
         <Image
           src="/img/construction.gif"
           alt="Under construction"
@@ -15,16 +21,44 @@ export default function Home() {
         />
       </header>
       <main className="flex flex-col items-center">
-        <Image
-          className="fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]"
-          src="/img/cupid.gif"
-          alt="Cupid"
-          width={380}
-          height={100}
-          priority
-        />
+        <section className="font-bold text-xl">
+          <h1 className="text-4xl mb-4">RSVP</h1>
+          <form name="rsvp-form" method="POST" netflify>
+            <input type="hidden" name="form-name" value="rsvp-form" />
+            <div className="mb-4">
+              <label>
+                Name:{' '}
+                <input type="text" name="name" required className="ml-2" />
+              </label>
+            </div>
+            <div className="mb-4">
+              <label>
+                Email:{' '}
+                <input type="email" name="email" required className="ml-2" />
+              </label>
+            </div>
+            <div className="mb-4">
+              <label>
+                Phone Number:{' '}
+                <input type="phone" name="email" required className="ml-2" />
+              </label>
+            </div>
+            <div className="mb-4">
+              <label>
+                Attending?
+                <select name="attendance" required className="ml-2">
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </label>
+            </div>
+            <div>
+              <button type="submit">Submit</button>
+            </div>
+          </form>
+        </section>
       </main>
-      <footer className="fixed flex flex-wrap items-center justify-center bottom-[3vh]">
+      <footer className="flex flex-wrap items-center justify-center my-[3vh]">
         <Image
           src="/img/construction.gif"
           alt="Under construction"
