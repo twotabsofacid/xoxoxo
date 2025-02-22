@@ -1,6 +1,16 @@
 import Image from 'next/image';
 
 export default function Home() {
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    await fetch('/__forms.html', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString()
+    });
+    // Success and error handling ...
+  };
   return (
     <div className="flex flex-col items-center justify-center min-h-[100vh]">
       <Image
@@ -23,7 +33,7 @@ export default function Home() {
       <main className="flex flex-col items-center">
         <section className="font-bold text-xl">
           <h1 className="text-4xl mb-4">RSVP</h1>
-          <form name="rsvp-form" method="POST" data-netlify="true">
+          <form name="rsvp-form" onSubmit={handleFormSubmit}>
             <input type="hidden" name="form-name" value="rsvp-form" />
             <div className="mb-4">
               <label>

@@ -1,0 +1,44 @@
+<html>
+  <head></head>
+  <body>
+    <form name="feedback" data-netlify="true" hidden>
+      <input type="hidden" name="form-name" value="feedback" />
+      <input name="name" type="text" />
+      <input name="email" type="text" />
+      <input name="message" type="text" />
+    </form>
+    <form name="rsvp-form" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="rsvp-form" />
+      <div class="mb-4">
+        <label>
+          Name:{' '}
+          <input type="text" name="name" required class="ml-2" />
+        </label>
+      </div>
+      <div class="mb-4">
+        <label>
+          Email:{' '}
+          <input type="email" name="email" required class="ml-2" />
+        </label>
+      </div>
+      <div class="mb-4">
+        <label>
+          Phone Number:{' '}
+          <input type="phone" name="email" required class="ml-2" />
+        </label>
+      </div>
+      <div class="mb-4">
+        <label>
+          Attending?
+          <select name="attendance" required class="ml-2">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </label>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
