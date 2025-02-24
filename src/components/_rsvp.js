@@ -32,34 +32,49 @@ const Rsvp = () => {
       {rsvpComplete ? (
         <h1 className="text-4xl font-bold">Thank you! {rsvpResponse}</h1>
       ) : (
-        <section className="font-bold text-xl">
+        <section className="text-xl">
           <form name="rsvp-form" onSubmit={handleFormSubmit}>
             <input type="hidden" name="form-name" value="rsvp-form" />
             <div className="mb-4">
-              <label>
+              <label className="font-bold">
                 Name(s)
-                <input type="text" name="name" required className="ml-2" />
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  className="ml-2 font-[500]"
+                />
               </label>
             </div>
             <div className="mb-4">
-              <label>
+              <label className="font-bold">
                 Email
-                <input type="email" name="email" required className="ml-2" />
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  className="ml-2 font-[500]"
+                />
               </label>
             </div>
             <div className="mb-4">
-              <label>
+              <label className="font-bold">
                 Phone Number
-                <input type="phone" name="email" required className="ml-2" />
+                <input
+                  type="phone"
+                  name="email"
+                  required
+                  className="ml-2 font-[500]"
+                />
               </label>
             </div>
             <div className="mb-4">
-              <label>
+              <label className="font-bold">
                 Attending?
                 <select
                   name="attendance"
                   required
-                  className="ml-2"
+                  className="ml-2 font-[500]"
                   onChange={(e) => {
                     console.log('change', e.target.value);
                     if (e.target.value === 'Yes') {
@@ -76,9 +91,13 @@ const Rsvp = () => {
             </div>
             {isAttending && (
               <div className="mb-4">
-                <label>
+                <label className="font-bold">
                   Number Attending
-                  <select name="attendance" required className="ml-2">
+                  <select
+                    name="attendance"
+                    required
+                    className="ml-2 font-[500]"
+                  >
                     <option value="1">1</option>
                     <option value="2">2</option>
                   </select>
@@ -86,7 +105,7 @@ const Rsvp = () => {
               </div>
             )}
             <div>
-              <button type="submit">Submit</button>
+              <button type="submit font-bold">Submit</button>
             </div>
           </form>
         </section>
