@@ -11,9 +11,9 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Space Grotesk', serif;
+  font-family: covik-sans, sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 input:focus,
