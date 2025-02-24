@@ -1,103 +1,82 @@
 import Image from 'next/image';
 import { useState } from 'react';
+import Landing from '@/components/_landing';
+import Recs from '@/components/_recs';
+import Rsvp from '@/components/_rsvp';
+import Details from '@/components/_details';
+import Logistics from '@/components/_logistics';
+import FlowerTwo from '@/components/icons/_flowerTwo';
 
 export default function Home() {
-  const [rsvpComplete, setRsvpComplete] = useState(false);
-  const [rsvpResponse, setRsvpResponse] = useState(405);
-  const handleFormSubmit = async (event) => {
-    event.preventDefault();
-    const formData = new FormData(event.target);
-    fetch('/__forms.html', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: new URLSearchParams(formData).toString()
-    })
-      .catch((err) => {
-        console.log('ERROR', err);
-      })
-      .then((res) => {
-        console.log('SUCCESS!', res);
-        if (res.status === 200) {
-          setRsvpResponse(200);
-        } else {
-          setRsvpResponse(405);
-        }
-        setRsvpComplete(true);
-      });
-    // Success and error handling ...
+  const [page, setPage] = useState('landing');
+  const navClick = (e) => {
+    e.preventDefault();
+    console.log(e);
+    console.log(e.currentTarget.hash.split('#')[1]);
+    setPage(e.currentTarget.hash.split('#')[1]);
   };
   return (
-    <div className="flex flex-col items-center justify-center min-h-[100vh]">
-      <Image
-        className="fixed top-[1em] right-[1em]"
-        src="/img/cupid.gif"
-        alt="Cupid"
-        width={190}
-        height={50}
-        priority
-      />
-      <header className="flex flex-wrap items-center justify-center my-[3vh]">
-        <Image
-          src="/img/construction.gif"
-          alt="Under construction"
-          width={480}
-          height={100}
-          priority
-        />
-      </header>
-      {rsvpComplete ? (
-        <main className="flex flex-col items-center">
-          <h1 className="text-4xl font-bold">Thank you! {rsvpResponse}</h1>
-        </main>
-      ) : (
-        <main className="flex flex-col items-center">
-          <section className="font-bold text-xl">
-            <h1 className="text-4xl mb-4">RSVP</h1>
-            <form name="rsvp-form" onSubmit={handleFormSubmit}>
-              <input type="hidden" name="form-name" value="rsvp-form" />
-              <div className="mb-4">
-                <label>
-                  Name:{' '}
-                  <input type="text" name="name" required className="ml-2" />
-                </label>
-              </div>
-              <div className="mb-4">
-                <label>
-                  Email:{' '}
-                  <input type="email" name="email" required className="ml-2" />
-                </label>
-              </div>
-              <div className="mb-4">
-                <label>
-                  Phone Number:{' '}
-                  <input type="phone" name="email" required className="ml-2" />
-                </label>
-              </div>
-              <div className="mb-4">
-                <label>
-                  Attending?
-                  <select name="attendance" required className="ml-2">
-                    <option value="Yes">Yes</option>
-                    <option value="No">No</option>
-                  </select>
-                </label>
-              </div>
-              <div>
-                <button type="submit">Submit</button>
-              </div>
-            </form>
-          </section>
-        </main>
-      )}
-      <footer className="flex flex-wrap items-center justify-center my-[3vh]">
-        <Image
-          src="/img/construction.gif"
-          alt="Under construction"
-          width={480}
-          height={100}
-          priority
-        />
-      </footer>
+    <div className="flex flex-col items-center justify-center min-h-[100vh] md:flex-row">
+      <aside className="md:w-[30vw] w-[100vw] md:min-h-[100vh] bg-[#710e20] md:text-4xl text-base flex flex-col justify-center md:p-4 p-2 md:fixed md:left-0 md:top-0">
+        <ul className="flex md:flex-col">
+          <li className="md:fixed md:top-0 md:left-0 md:p-4">
+            <a
+              href="#landing"
+              className="nav-link text-[#f8f1dc]"
+              onClick={navClick}
+            >
+              <FlowerTwo className="md:w-[6rem] w-[2rem] h-auto" />
+            </a>
+          </li>
+          <li className="px-2 md:px-0 md:py-4">
+            <a
+              href="#rsvp"
+              className="nav-link text-[#f8f1dc]"
+              onClick={navClick}
+            >
+              RSVP
+            </a>
+          </li>
+          <li className="px-2 md:px-0 md:py-4">
+            <a
+              href="#details"
+              className="nav-link text-[#f8f1dc]"
+              onClick={navClick}
+            >
+              Events
+            </a>
+          </li>
+          <li className="px-2 md:px-0 md:py-4">
+            <a
+              href="#logistics"
+              className="nav-link text-[#f8f1dc]"
+              onClick={navClick}
+            >
+              Logistics
+            </a>
+          </li>
+          <li className="px-2 md:px-0 md:py-4">
+            <a
+              href="#recs"
+              className="nav-link text-[#f8f1dc]"
+              onClick={navClick}
+            >
+              Recs
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <main className="flex relative flex-col w-[100vw] md:w-[70vw] md:left-[15vw] min-h-[100vh]">
+        {
+          {
+            rsvp: <Rsvp />,
+            landing: <Landing />,
+            recs: <Recs />,
+            logistics: <Logistics />,
+            details: <Details />
+          }[page]
+        }
+      </main>
     </div>
   );
 }

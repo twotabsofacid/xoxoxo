@@ -25,19 +25,38 @@ button:focus {
 input,
 select {
   background-color: transparent;
-  border-bottom: 1px solid var(--highlight);
-  color: var(--highlight);
+  border-bottom: 1px solid var(--foreground);
+  color: var(--foreground);
 }
 select {
-  border: 1px solid var(--highlight);
+  border: 1px solid var(--foreground);
   padding: 0.2em 0.5em;
 }
 button {
-  background-color: var(--highlight);
+  background-color: var(--foreground);
   color: var(--background);
+  border: 1px solid var(--background);
   padding: 0.5em 1em;
   transition: 0.3s ease all;
 }
 button:hover {
-  background-color: var(--foreground);
+  background-color: var(--background);
+  color: var(--foreground);
+  border: 1px solid var(--foreground);
+}
+.nav-link {
+  border-bottom: 2px solid transparent;
+  transition: 0.3s ease all;
+}
+.nav-link:hover {
+  border-bottom: 2px solid var(--background);
+}
+.page-title {
+  font-size: 6em;
+  font-weight: 800;
+  line-height: 1;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-strokewidth: 0.1625rem;
+  -webkit-text-stroke-color: var(--foreground);
+  -webkit-font-smoothing: subpixel-antialiased;
 }
