@@ -23,7 +23,7 @@ const Recs = () => {
             <Coffee className="h-[2em] w-auto" />
           </div>
           <h1 className="font-bold">Constellation Coffee</h1>
-          <p>Best coffee in Pittsburgh. Good pour over and espresso.</p>
+          <p>Best coffee shop in Pittsburgh. Amazing pour over and espresso.</p>
         </li>
         <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
           <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
@@ -32,55 +32,9 @@ const Recs = () => {
           </div>
           <h1 className="font-bold">Madeleine Bakery</h1>
           <p>
-            Amazing baked goods, bread, and sandwiches. Get there early because
-            they run out.
+            Incredible baked goods, bread, and sandwiches. Get there early
+            because they run out.
           </p>
-        </li>
-        <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
-          <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
-            <Fork className="h-[2em] w-auto" />
-            <Cocktail className="h-[2em] w-auto" />
-          </div>
-          <h1 className="font-bold">Kelly's Bar & Lounge</h1>
-          <p>Best dive bar in town, and it's non-smoking. Good bar food.</p>
-        </li>
-        <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
-          <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
-            <Fork className="h-[2em] w-auto" />
-            <Cocktail className="h-[2em] w-auto" />
-          </div>
-          <h1 className="font-bold">Fet Fisk</h1>
-          <p>Nordic inspired seafood restaurant with good cocktails.</p>
-        </li>
-        <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
-          <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
-            <Cocktail className="h-[2em] w-auto" />
-            <Fish className="h-[2em] w-auto" />
-          </div>
-          <h1 className="font-bold">Tina's</h1>
-          <p>Good cocktail bar with a selection of tinned fish.</p>
-        </li>
-        <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
-          <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
-            <Coffee className="h-[2em] w-auto" />
-          </div>
-          <h1 className="font-bold">KLVN Coffee Lab</h1>
-          <p>Good coffee (not as good as Constellation).</p>
-        </li>
-        <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
-          <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
-            <Bagel className="h-[2em] w-auto" />
-          </div>
-          <h1 className="font-bold">Pigeon Bagels</h1>
-          <p>The only good bagels in Pittsburgh.</p>
-        </li>
-        <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
-          <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
-            <Fork className="h-[2em] w-auto" />
-            <Beer className="h-[2em] w-auto" />
-          </div>
-          <h1 className="font-bold">D's Six Pax and Dogz</h1>
-          <p>Spot to get a beer and a dog.</p>
         </li>
         <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
           <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
@@ -94,10 +48,45 @@ const Recs = () => {
         </li>
         <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
           <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
+            <Fork className="h-[2em] w-auto" />
+            <Cocktail className="h-[2em] w-auto" />
+          </div>
+          <h1 className="font-bold">Kelly's Bar & Lounge</h1>
+          <p>
+            Dive bar with solid food and good drinks. It's also non-smoking.
+          </p>
+        </li>
+        <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
+          <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
+            <Bagel className="h-[2em] w-auto" />
+          </div>
+          <h1 className="font-bold">Pigeon Bagels</h1>
+          <p>The only good bagels in Pittsburgh.</p>
+        </li>
+        <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
+          <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
             <Art className="h-[2em] w-auto" />
           </div>
           <h1 className="font-bold">Carnegie Museum</h1>
-          <p>Good permanent collection and it's never very crowded.</p>
+          <p>
+            Good permanent collection and it's never very crowded. Stare at a
+            Monet for as long as you please.
+          </p>
+        </li>
+        <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
+          <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
+            <Fork className="h-[2em] w-auto" />
+            <Cocktail className="h-[2em] w-auto" />
+          </div>
+          <h1 className="font-bold">Fet Fisk</h1>
+          <p>Nordic inspired seafood restaurant with good cocktails.</p>
+        </li>
+        <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
+          <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
+            <Bird className="h-[2em] w-auto" />
+          </div>
+          <h1 className="font-bold">National Aviary</h1>
+          <p>See some birds. Lots of birds here.</p>
         </li>
         <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
           <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
@@ -108,12 +97,37 @@ const Recs = () => {
         </li>
         <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
           <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
+            <Cocktail className="h-[2em] w-auto" />
+            <Fish className="h-[2em] w-auto" />
+          </div>
+          <h1 className="font-bold">Tina's</h1>
+          <p>Cute cocktail bar with a selection of tinned fish.</p>
+        </li>
+        <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
+          <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
+            <Coffee className="h-[2em] w-auto" />
+          </div>
+          <h1 className="font-bold">KLVN Coffee Lab</h1>
+          <p>Good coffee (not as good as Constellation).</p>
+        </li>
+        <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
+          <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
+            <Fork className="h-[2em] w-auto" />
+            <Beer className="h-[2em] w-auto" />
+          </div>
+          <h1 className="font-bold">D's Six Pax and Dogz</h1>
+          <p>Spot to get a beer and a dog.</p>
+        </li>
+        <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
+          <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
             <Pizza className="h-[2em] w-auto" />
             <Beer className="h-[2em] w-auto" />
             <Cocktail className="h-[2em] w-auto" />
           </div>
           <h1 className="font-bold">Lorelei</h1>
-          <p>Pizza, beer, cocktails. Coffee only until 5pm.</p>
+          <p>
+            Pizza, beer, cocktails (after 5pm), plus coffee shop (before 5pm).
+          </p>
         </li>
         <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
           <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
@@ -131,7 +145,10 @@ const Recs = () => {
             <Art className="h-[2em] w-auto" />
           </div>
           <h1 className="font-bold">Troy Hill Art Houses</h1>
-          <p>Four whole house art installations.</p>
+          <p>
+            Four whole house art installations. Call ahead to reserve a time to
+            visit.
+          </p>
         </li>
         <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
           <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
@@ -147,7 +164,10 @@ const Recs = () => {
             <Fork className="h-[2em] w-auto" />
           </div>
           <h1 className="font-bold">Bloomfield Saturday Market</h1>
-          <p>Farmer's market that runs every saturday during the summer. </p>
+          <p>
+            Farmer's market that runs every saturday during the summer. Nice
+            selection of snacks and drinks.
+          </p>
         </li>
         <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
           <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
@@ -170,13 +190,6 @@ const Recs = () => {
         </li>
         <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
           <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
-            <Bird className="h-[2em] w-auto" />
-          </div>
-          <h1 className="font-bold">National Aviary</h1>
-          <p>See some birds. Lots of birds here.</p>
-        </li>
-        <li className="border border-[#710e20] relative lg:p-4 md:p-3 p-2">
-          <div className="grid grid-flow-row grid-cols-3 gap-4 w-[100%] mb-4">
             <Art className="h-[2em] w-auto" />
           </div>
           <h1 className="font-bold">St Anthony's Lyceum</h1>
@@ -192,7 +205,7 @@ const Recs = () => {
           </div>
           <h1 className="font-bold">Mancini's Bread Co.</h1>
           <p>
-            Experience all Apalachia has to offer by getting a pizza roll here.
+            Experience all Appalachia has to offer by getting a pizza roll here.
             Walk around the Strip District after.
           </p>
         </li>
