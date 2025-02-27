@@ -93,11 +93,7 @@ const Rsvp = () => {
               <div className="mb-4">
                 <label className="font-bold">
                   Number Attending
-                  <select
-                    name="attendance"
-                    required
-                    className="ml-2 font-[500]"
-                  >
+                  <select name="attendance-number" className="ml-2 font-[500]">
                     <option value="1">1</option>
                     <option value="2">2</option>
                   </select>

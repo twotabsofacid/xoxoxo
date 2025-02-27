@@ -1,12 +1,6 @@
 <html>
   <head></head>
   <body>
-    <form name="feedback" data-netlify="true" hidden>
-      <input type="hidden" name="form-name" value="feedback" />
-      <input name="name" type="text" />
-      <input name="email" type="text" />
-      <input name="message" type="text" />
-    </form>
     <form name="rsvp-form" method="POST" data-netlify="true">
       <input type="hidden" name="form-name" value="rsvp-form" />
       <div class="mb-4">
@@ -24,7 +18,7 @@
       <div class="mb-4">
         <label>
           Phone Number:{' '}
-          <input type="phone" name="email" required class="ml-2" />
+          <input type="phone" name="phone" required class="ml-2" />
         </label>
       </div>
       <div class="mb-4">
@@ -36,7 +30,16 @@
           </select>
         </label>
       </div>
-      <div>
+      <div class="mb-4">
+        <label class="font-bold">
+          Number Attending
+          <select name="attendance-number" class="ml-2 font-[500]">
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </label>
+      </div>
+      <div class="mb-4">
         <button type="submit">Submit</button>
       </div>
     </form>
