@@ -3,7 +3,7 @@ import LogisticsText from './text/_logisticsText';
 const Logistics = () => {
   return (
     <section className="flex flex-col p-4">
-      <LogisticsText className="w-[100%] h-auto md:mb-12 mb-6" />
+      <LogisticsText className="w-[100%] h-auto md:mb-8 mb-3" />
       <div>
         <h3 className="text-4xl mb-4">Overview</h3>
         <p>

@@ -6,6 +6,18 @@
   --background: #f8f1dc;
   --foreground: #710e20;
   --highlight: #8d4584;
+  --playful-bright-1: #ff69b4;
+  --playful-bright-2: #ffd700;
+  --playful-bright-3: #32cd32;
+  --electric-bright-1: #ff1493;
+  --electric-bright-2: #00ff7f;
+  --electric-bright-3: #ff4500;
+  --neon-bright-1: #ff007f;
+  --neon-bright-2: #00ff00;
+  --neon-bright-3: #ffd700;
+  --bold-bright-1: #ff00ff;
+  --bold-bright-2: #00ffff;
+  --bold-bright-3: #ffa500;
 }
 
 body {
@@ -59,4 +71,20 @@ button:hover {
   -webkit-text-strokewidth: 0.1625rem;
   -webkit-text-stroke-color: var(--foreground);
   -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.color-0 {
+  background-color: var(--playful-bright-1);
+  filter: brightness(85%);
+  opacity: 0.5;
+}
+.color-1 {
+  background-color: var(--playful-bright-2);
+  filter: brightness(85%);
+  opacity: 0.5;
+}
+.color-2 {
+  background-color: var(--playful-bright-3);
+  filter: brightness(85%);
+  opacity: 0.5;
 }

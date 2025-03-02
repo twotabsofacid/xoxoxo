@@ -5,7 +5,6 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <meta charset="utf-8" />
-        <title>Brianna and Sean</title>
         <meta
           name="description"
           content="Brianna and Sean are getting married."

@@ -7,7 +7,7 @@ const Details = () => {
       <p className="mb-6">
         We're doing a self uniting marriage, so there won't be a service.
         Instead, we'd like to celebrate our union by coming together to share a
-        meal with the people we care about most.
+        meal with the people we love.
       </p>
       <div className="mb-6">
         <h3 className="text-4xl mb-4">Welcome at our home</h3>
