@@ -5,9 +5,9 @@ const Details = () => {
     <section className="flex flex-col p-4">
       <DetailsText className="w-[100%] h-auto md:mb-12 mb-6" />
       <p className="mb-6">
-        We're doing a self uniting marriage (look it up!), so there won't be a
-        service. Instead, we'd like to celebrate our union by coming together to
-        share a meal with the people we care about most.
+        We're doing a self uniting marriage, so there won't be a service.
+        Instead, we'd like to celebrate our union by coming together to share a
+        meal with the people we care about most.
       </p>
       <div className="mb-6">
         <h3 className="text-4xl mb-4">Welcome at our home</h3>
@@ -17,7 +17,7 @@ const Details = () => {
         <h5 className="font-bold">Pittsburgh, PA 15221</h5>
         <p className="mt-2">
           We'll be hosting a welcome gathering at our home. Beer, wine, food
-          (pizza? snacks? we'll find out), and music.
+          (pizza? snacks? who knows), and music.
         </p>
       </div>
       <div>
