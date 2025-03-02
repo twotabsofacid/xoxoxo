@@ -30,7 +30,10 @@ const Rsvp = () => {
     <section className="flex flex-col relative p-4 min-h-[100vh]">
       <RsvpText className="w-[100%] h-auto md:mb-12 mb-6" />
       {rsvpComplete ? (
-        <h1 className="text-4xl font-bold">Thank you! {rsvpResponse}</h1>
+        <>
+          <h1 className="text-4xl font-bold mb-6">Thank you!</h1>
+          <p>If you're coming, we can't wait to see you!</p>
+        </>
       ) : (
         <section className="text-xl">
           <form name="rsvp-form" onSubmit={handleFormSubmit}>
@@ -62,7 +65,7 @@ const Rsvp = () => {
                 Phone Number
                 <input
                   type="phone"
-                  name="email"
+                  name="phone"
                   required
                   className="ml-2 font-[500]"
                 />
