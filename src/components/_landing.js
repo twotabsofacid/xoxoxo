@@ -31,7 +31,7 @@ const Landing = () => {
       )}
       {colorShader === 'color-3' ? (
         <Image
-          src="/img/scan-final.png"
+          src="/img/scan-final.jpg"
           width={2012}
           height={1500}
           priority
