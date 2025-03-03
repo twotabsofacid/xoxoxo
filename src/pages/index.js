@@ -25,7 +25,7 @@ export default function Home() {
               className="nav-link text-[#f8f1dc]"
               onClick={navClick}
             >
-              <FlowerTwo className="md:w-[6rem] w-[2rem] h-auto" />
+              <FlowerTwo className="home-icon md:w-[6rem] w-[2rem] h-auto" />
             </a>
           </li>
           <li className="px-2 md:px-0 md:py-4">

@@ -88,3 +88,17 @@ button:hover {
   filter: brightness(85%);
   opacity: 0.5;
 }
+.home-icon {
+  animation-name: rotate;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
