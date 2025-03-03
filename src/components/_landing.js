@@ -4,13 +4,13 @@ import Flower from './icons/_flower';
 import FlowerWink from './icons/_flower-wink';
 const Landing = () => {
   const [winking, setWinking] = useState(false);
-  const [colorShader, setColorShader] = useState('color-3');
-  const counterRef = useRef(0);
+  const [colorShader, setColorShader] = useState('color-0');
+  const counterRef = useRef(2);
   useEffect(() => {
-    // const blink = setInterval(() => {
-    //   counterRef.current++;
-    //   setColorShader(`color-${(counterRef.current + 1) % 4}`);
-    // }, 500);
+    const blink = setInterval(() => {
+      counterRef.current++;
+      setColorShader(`color-${(counterRef.current + 1) % 3}`);
+    }, 500);
     const wink = setInterval(() => {
       setWinking(true);
       setTimeout(() => {
@@ -19,7 +19,7 @@ const Landing = () => {
     }, 5000);
     return () => {
       clearInterval(wink);
-      // clearInterval(blink);
+      clearInterval(blink);
     };
   }, []);
   return (
