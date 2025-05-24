@@ -30,11 +30,11 @@ export default function Home() {
           </li>
           <li className="px-2 md:px-0 md:py-4">
             <a
-              href="#rsvp"
+              href="https://registry.theknot.com/brianna-gill-sean-scanlan-june-2025-pa/71411945"
               className="nav-link text-[#f8f1dc]"
-              onClick={navClick}
+              target="_blank"
             >
-              RSVP
+              Registry
             </a>
           </li>
           <li className="px-2 md:px-0 md:py-4">

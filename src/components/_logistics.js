@@ -9,9 +9,8 @@ const Logistics = () => {
         <p>
           Stuff is happening in two locations: our home (Regent Square), and
           Morcilla (Lawrenceville). Staying in or around either of these
-          neighborhoods, or somewhere in between, is probably best. But it's a
-          free country (ha ha), you can do whatever you like. This list isn't
-          exhaustive, but here's some suggestions.
+          neighborhoods, or somewhere in between, is probably best. This list
+          isn't exhaustive, but here's some suggestions.
         </p>
       </div>
       <div className="mt-4">
